@@ -51,3 +51,15 @@ git config --global difftool.prompt false // diable prompting
 git difftool e6a3fab 78bbb01
 git difftool HEAD
 
+git config --global merge.tool code
+git config --global mergetool.code.cmd "code --wait merged"
+git config --global mergetool.prompt false
+git config --global mergetool.keepbackup false
+
+// Git branch
+git branch
+git branch feature1        // create a feature branch
+git checkout feature1      // checkout  a branch
+git checkout -b featute3   // create and checkout in one step
+
+
