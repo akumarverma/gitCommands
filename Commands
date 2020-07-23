@@ -19,4 +19,49 @@ git init
 git add .
 git commit -m "File modified"
 git remote -v 
- git diff --cached
+git diff --cached
+git pull
+git log
+git log --oneline
+git show <commit> 
+git show <commit> --name-status
+git show <commit> --name-only
+
+Link to basic command:
+https://confluence.atlassian.com/bitbucketserver/basic-git-commands-776639767.html
+
+
+default diff tools
+--------------------
+Open Visual Studio Code and press Command + Shift + P or F1 then type Shell in command palette 
+now you are able to find this option like 
+Shell Command : Install code in PATH from suggested list in command palette. Select that options.
+
+// Listing all config variable
+git config --global --list
+
+// Setting git editor
+git config --global core.editor code
+git config --global -e
+
+git config --global --get diff.tool
+git config --global diff.tool default-difftool
+git config --global --get diff.tool
+git config --global difftool.prompt false // diable prompting
+git difftool e6a3fab 78bbb01
+git difftool HEAD
+
+git config --global merge.tool code
+git config --global mergetool.code.cmd "code --wait merged"
+git config --global mergetool.prompt false
+git config --global mergetool.keepbackup false
+
+// Git branch
+git branch
+git branch feature1        // create a feature branch
+git checkout feature1      // checkout  a feature branch
+git checkout -b featute3   // create and checkout in one step
+
+git add .
+git commit -m 'Feature branch 3'
+git push --set-upstream origin featute3
