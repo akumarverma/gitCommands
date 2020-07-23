@@ -59,9 +59,14 @@ git config --global mergetool.keepbackup false
 // Git branch
 git branch
 git branch feature1        // create a feature branch
+
 git checkout feature1      // checkout  a feature branch
 git checkout -b featute3   // create and checkout in one step
 
 git add .
 git commit -m 'Feature branch 3'
 git push --set-upstream origin featute3
+=======
+git checkout feature1      // checkout  a branch
+git checkout -b featute3   // create and checkout in one step
+
