@@ -18,3 +18,5 @@ git push -u origin master
 git init
 git add .
 git commit -m "File modified"
+git remote -v 
+ git diff --cached
