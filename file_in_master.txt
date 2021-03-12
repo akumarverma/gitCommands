@@ -1,1 +1,5 @@
 file in master
+changed in restore
+a 2nd line
+a 3rd line
+xyz
